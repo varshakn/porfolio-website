@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF; /* White text color */
+    background-color: #4B2C3D; /* Dark berry background */
+}
+
+/* Header Styles */
+header {
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF; /* White text color */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Section Styles (Modern, Curvy, Transparent Boxes) */
+section {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white with 10% opacity */
+    border-radius: 20px; /* Rounded corners for a modern look */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow for a subtle effect */
+    backdrop-filter: blur(10px); /* Blur effect for a frosted glass look */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft white border for better definition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+section h2 {
+    color: #FFFFFF; /* White text color */
+    margin-bottom: 10px;
+    font-size: 2em; /* Larger font size for better visibility */
+    font-weight: bold;
+}
+
+section p, section ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #FFFFFF; /* White text color */
+}
+
+/* List Styles */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: transparent; /* Transparent footer to blend with background */
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    color: #FFFFFF; /* White text color */
+}
+
+/* Project Cards */
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white with 10% opacity */
+    border-radius: 15px; /* Curvy edges */
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft white border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.project-card h3 {
+    color: #FFFFFF; /* White text color */
+}
+
+h2 {
+    color: #fb00c5; /* A slightly lighter shade of black */
+}
+
+.project-card p {
+    color: #FFFFFF; /* White text color */
+}
+
+/* Responsive Grid Layout */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

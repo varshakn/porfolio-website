@@ -1,0 +1,39 @@
+/* Introduction Section */
+#introduction {
+    width: calc(100% + 40px); /* Extend further to touch the edges */
+    padding: 60px 20px; /* Padding around the section */
+    background: linear-gradient(to right, #01066d, #0f0f0f); /* Fluorescent dark blue to fluorescent black gradient */
+    color: #ffffff; /* White text color for contrast */
+    text-align: center; /* Center the text */
+    margin: 40px -20px 0; /* Adjust margins to touch edges */
+    box-sizing: border-box; /* Include padding and border in width */
+    border-radius: 50px; /* Curvy edges on all sides */
+    overflow: hidden; /* Ensure no content spills over the rounded corners */
+}
+
+/* Introduction Header */
+.intro-header {
+    font-family: 'Cooper Black', sans-serif; /* Cooper Black font */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.intro-header h1 {
+    font-size: 2rem; /* Size for "I am" heading */
+    margin: 0;
+    color: #ffffff; /* White text color */
+}
+
+.intro-header h2 {
+    font-size: 3rem; /* Size for "Varsha Kizhakkillam Neelamana" */
+    margin: 10px 0; /* Space around the name */
+    color: #ffffff; /* White text color */
+}
+
+/* Introduction Content */
+.intro-content {
+    font-size: 1.2rem; /* Font size for the introduction content */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0 auto; /* Center content */
+    max-width: 800px; /* Limit the width of the content */
+    color: #ffffff; /* White text color */
+}

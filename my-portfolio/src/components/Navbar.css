@@ -1,0 +1,44 @@
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(to right, #01066d, #0f0f0f); /* Fluorescent dark blue to fluorescent black gradient */
+  color: #ffffff; /* White text color for better contrast */
+  padding: 20px 15px; /* Increased vertical padding, adjusted horizontal padding */
+  display: flex;
+  justify-content: space-between; /* Align items with space between */
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  border-radius: 0 0 15px 15px; /* Curvy bottom edges */
+  box-sizing: border-box; /* Include padding and border in width */
+  position: relative; /* Ensure positioning for full width */
+  left: 50%; /* Offset from left */
+  right: 50%; /* Offset from right */
+  margin-left: -50vw; /* Negative margin to align with viewport edges */
+  margin-right: -50vw; /* Negative margin to align with viewport edges */
+}
+
+/* Ensure text is aligned right and logo is aligned to the left */
+.navbar .portfolio-title {
+  color: rgba(255, 255, 255, 0.7); /* Slightly translucent white for logo text */
+  font-size: 1.5rem; /* Adjust size as needed */
+  font-family: 'Cooper Black', sans-serif; /* Use Cooper Black font */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Blur effect */
+}
+
+/* Navbar Links */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px; /* Space between menu items */
+}
+
+.navbar ul li a {
+  color: #ffffff; /* White text color for links */
+  text-decoration: none;
+  font-size: 1rem;
+}

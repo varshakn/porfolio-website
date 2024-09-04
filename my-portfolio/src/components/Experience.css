@@ -1,0 +1,47 @@
+/* Experience Section */
+.experience-section {
+  padding: 20px;
+  background-color: #ffffff; /* White background for the section */
+  margin-bottom: 30px; /* Space below the section */
+}
+
+/* Section Heading */
+h2 {
+  color: #000000; /* Black color for the heading */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Cooper Black', sans-serif; /* Cooper Black font style */
+  text-align: center; /* Center the heading */
+}
+
+/* Experience Squares */
+.experience-square {
+  background-color: #00008B; /* Darker blue background for the clickable squares */
+  border: none; /* Remove borders */
+  border-radius: 15px; /* Curvy edges */
+  padding: 20px; /* Increased padding inside the box */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #ffffff; /* White text color for better visibility */
+  font-family: Arial, sans-serif; /* Standard font style */
+  text-align: left; /* Align the text to the left */
+  margin-bottom: 10px; /* Space between squares */
+}
+
+/* Hover Effect */
+.experience-square:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Experience Details */
+.experience-details {
+  margin-top: 10px;
+  background-color: #ADD8E6; /* Light blue background for the details section */
+  border-radius: 15px; /* Curvy edges */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+  font-family: Arial, sans-serif; /* Standard font style */
+  color: #000000; /* Black text color */
+}

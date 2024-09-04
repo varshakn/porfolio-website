@@ -1,0 +1,16 @@
+/* src/components/Header.css */
+header {
+    background: url('URL_TO_YOUR_IMAGE') no-repeat center center; /* Replace with your image URL */
+    background-size: cover;
+    color: #ffffff; /* White text color for header content */
+    text-align: center;
+    padding: 100px 20px; /* Adjust as needed for your header image */
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000; /* Change h1 text color to black */
+  }
+  

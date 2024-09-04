@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cooper+Black&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff; /* White background for the page */
+}
+
+/* Container */
+.container {
+  width: 100%; /* Full width to touch left and right edges */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Ensure the content does not overflow the viewport */
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(to right, #01066d, #0f0f0f); /* Fluorescent dark blue to fluorescent black gradient */
+  color: #ffffff; /* White text color for better contrast */
+  padding: 20px 15px; /* Increased vertical padding, adjusted horizontal padding */
+  display: flex;
+  justify-content: space-between; /* Align items with space between */
+  align-items: center;
+  width: calc(100% + 40px); /* Extend beyond the container width */
+  margin-left: -20px; /* Adjust margin to center it */
+  margin-right: -20px; /* Adjust margin to center it */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  border-radius: 0 0 15px 15px; /* Curvy bottom edges */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Ensure text is aligned right and logo is aligned to the left */
+.navbar h1 {
+  color: #ffffff; /* White text color for better contrast */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6); /* Blur effect */
+}
+
+/* Logo Style */
+.navbar .logo {
+  color: rgba(255, 255, 255, 0.7); /* Slightly translucent white for logo text */
+  font-size: 1.2rem; /* Adjust size as needed */
+  font-family: 'Cooper Black', sans-serif; /* Use Cooper Black font */
+}
+
+/* Navbar Links */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px; /* Space between menu items */
+}
+
+.navbar ul li a {
+  color: #ffffff; /* White text color for links */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Introduction Section */
+#introduction {
+  width: 100%; /* Full width to touch left and right edges */
+  padding: 20px 0; /* Add some padding at the top and bottom */
+  background: linear-gradient(to right, #01066d, #0f0f0f); /* Fluorescent dark blue to fluorescent black gradient */
+  border-radius: 0 0 50px 50px; /* Curved bottom corners */
+  box-sizing: border-box; /* Include padding and border in width */
+  text-align: center; /* Center the text */
+  color: #ffffff; /* White text color */
+}
+
+.intro-box {
+  background: linear-gradient(to right, #39ff14, #f7ff00); /* Fluorescent gradient */
+  border-radius: 15px; /* Curvy edges */
+  padding: 40px; /* Padding inside the intro box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Modern shadow */
+  margin: 40px auto; /* Space above and below the box */
+  width: 60%; /* Full width of the intro box */
+  max-width: 1200px; /* Maximum width of the intro box */
+  border-radius: 0 0 15px 15px; /* Curvy bottom edges */
+}
+
+/* Header and Name Styles */
+.header {
+  font-family: 'Cooper Black', sans-serif; /* Cooper Black font */
+  font-size: 2rem; /* Size for the "I am" heading */
+  margin: 0; /* Remove default margin */
+  color: #ffffff; /* White text color */
+}
+
+.name {
+  font-family: 'Cooper Black', sans-serif; /* Cooper Black font */
+  font-size: 3rem; /* Size for the name heading */
+  margin: 10px 0; /* Space above and below the name */
+  color: #ffffff; /* White text color */
+}
+
+/* Introduction Content */
+.intro-content h2 {
+  font-size: 2rem; /* Size for section heading */
+  margin: 20px 0 10px; /* Space around the heading */
+  color: #ffffff; /* White text color */
+}
+
+.intro-content p {
+  font-size: 1rem; /* Font size for text */
+  line-height: 1.5; /* Line height for readability */
+  color: #ffffff; /* White text color */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #000000; /* Black text color */
+}
+
+  /* Skills Header */
+  .skills-header {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-family: 'Cooper Black', sans-serif; /* Use the Cooper Black font */
+    color: #ffffff; /* White text color */
+    margin-bottom: 50px; /* Space between "Skills" heading and logos */
+    text-align: center; /* Center the text */
+}
+
+/* Logo or Skills Container */
+.skills-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow logos to wrap if needed */
+    gap: 20px; /* Space between logos */
+}
