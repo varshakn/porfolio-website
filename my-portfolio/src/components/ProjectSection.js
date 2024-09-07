@@ -236,36 +236,22 @@ function ProjectSection() {
     `
 ,
     },
-
   ];
 
-  const handleProjectClick = (index) => {
-    setSelectedProject(selectedProject === index ? null : index);
-  };
-
   return (
-    <section className="projects-section">
-      <h2 className="projects-main-heading">Project Highlights</h2>
-      <div className="projects-container">
+    <div className="project-section">
+      <h2>Project Highlights</h2>
+      <ul>
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className={`project-box ${selectedProject === index ? 'active' : ''}`}
-            onClick={() => handleProjectClick(index)}
-          >
+          <li key={index} onClick={() => setSelectedProject(project.details)}>
             {project.name}
-          </div>
+          </li>
         ))}
-      </div>
-      {selectedProject !== null && (
-        <div className="project-details-container">
-          <div
-            className="project-details"
-            dangerouslySetInnerHTML={{ __html: projects[selectedProject].details }}
-          />
-        </div>
+      </ul>
+      {selectedProject && (
+        <div className="project-details" dangerouslySetInnerHTML={{ __html: selectedProject }} />
       )}
-    </section>
+    </div>
   );
 }
 

@@ -1,0 +1,63 @@
+.achievements-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light grey background for contrast */
+  color: #333333; /* Dark grey text color */
+  text-align: center;
+}
+
+.achievements-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: 'Cooper Black', sans-serif;
+  color: #333333; /* Dark grey color for the title */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
+}
+
+.achievements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between items */
+}
+
+.achievement-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(100% - 40px); /* Full width minus padding */
+  max-width: 300px; /* Max width for the card */
+  text-align: left; /* Align text to the left */
+  border: 2px solid; /* Add border */
+  border-image-slice: 1; /* Ensure the border gradient is applied */
+  border-image-source: linear-gradient(to right, #1a2a6c, #0c1445); /* Dark blue to black gradient */
+}
+
+.achievement-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1e3a8a; /* Dark blue color for the title */
+}
+
+.achievement-card p {
+  font-size: 1rem;
+  color: #666666; /* Grey color for the description */
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .achievement-card {
+    width: calc(50% - 40px); /* Half width minus padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-card {
+    width: calc(100% - 40px); /* Full width minus padding for mobile screens */
+  }
+}

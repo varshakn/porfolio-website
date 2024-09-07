@@ -23,7 +23,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  background: linear-gradient(to right, #01066d, #0f0f0f); /* Fluorescent dark blue to fluorescent black gradient */
+  background: linear-gradient(to right, black, darkblue); /* Fluorescent dark blue to fluorescent black gradient */
   color: #ffffff; /* White text color for better contrast */
   padding: 20px 15px; /* Increased vertical padding, adjusted horizontal padding */
   display: flex;
@@ -33,7 +33,6 @@ body {
   margin-left: -20px; /* Adjust margin to center it */
   margin-right: -20px; /* Adjust margin to center it */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  border-radius: 0 0 15px 15px; /* Curvy bottom edges */
   box-sizing: border-box; /* Include padding and border in width */
 }
 
@@ -73,52 +72,97 @@ body {
 
 /* Introduction Section */
 #introduction {
-  width: 100%; /* Full width to touch left and right edges */
-  padding: 20px 0; /* Add some padding at the top and bottom */
-  background: linear-gradient(to right, #01066d, #0f0f0f); /* Fluorescent dark blue to fluorescent black gradient */
-  border-radius: 0 0 50px 50px; /* Curved bottom corners */
-  box-sizing: border-box; /* Include padding and border in width */
-  text-align: center; /* Center the text */
-  color: #ffffff; /* White text color */
+  width: 100%;
+  height: 60vh; /* Set a specific height */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  justify-content: center;
+  background: linear-gradient(to right, black, darkblue); /* Dark blue to black gradient background */
+  color: #ffffff;
+  text-align: left; /* Align text to the left */
+  padding: 0 2rem; /* Add padding for spacing */
+  box-sizing: border-box;
+  margin: 0; /* Remove margin */
+  position: relative;
 }
 
-.intro-box {
-  background: linear-gradient(to right, #39ff14, #f7ff00); /* Fluorescent gradient */
-  border-radius: 15px; /* Curvy edges */
-  padding: 40px; /* Padding inside the intro box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Modern shadow */
-  margin: 40px auto; /* Space above and below the box */
-  width: 60%; /* Full width of the intro box */
-  max-width: 1200px; /* Maximum width of the intro box */
-  border-radius: 0 0 15px 15px; /* Curvy bottom edges */
+.intro-name {
+  font-family: 'Cooper Black', serif; /* Cooper Black font */
+  font-size: 3.5rem; /* Increased size */
+  color: #4a90e2; /* Light blue color for name */
+  margin: 0 0 1rem 0;
+  animation: typing 3s steps(30, end) forwards; /* Typing effect */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: none; /* Remove cursor effect */
 }
 
-/* Header and Name Styles */
-.header {
-  font-family: 'Cooper Black', sans-serif; /* Cooper Black font */
-  font-size: 2rem; /* Size for the "I am" heading */
-  margin: 0; /* Remove default margin */
-  color: #ffffff; /* White text color */
+.intro-paragraph {
+  font-family: 'Merriweather', serif; /* Elegant serif font */
+  font-size: 1.2rem; /* Adjusted size */
+  color: #ffffff; /* White color for subheading */
+  line-height: 1.6;
+  margin: 0;
+  animation: fadeIn 3s ease-in-out 3s forwards; /* Fade-in animation with delay */
+  opacity: 1; /* Ensure it is visible */
 }
 
-.name {
-  font-family: 'Cooper Black', sans-serif; /* Cooper Black font */
-  font-size: 3rem; /* Size for the name heading */
-  margin: 10px 0; /* Space above and below the name */
-  color: #ffffff; /* White text color */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-/* Introduction Content */
-.intro-content h2 {
-  font-size: 2rem; /* Size for section heading */
-  margin: 20px 0 10px; /* Space around the heading */
-  color: #ffffff; /* White text color */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
-.intro-content p {
-  font-size: 1rem; /* Font size for text */
-  line-height: 1.5; /* Line height for readability */
-  color: #ffffff; /* White text color */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes fadeInBackground {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 /* Footer Styles */
@@ -128,20 +172,231 @@ footer {
   color: #000000; /* Black text color */
 }
 
-  /* Skills Header */
-  .skills-header {
-    font-size: 2rem; /* Adjust the font size as needed */
-    font-family: 'Cooper Black', sans-serif; /* Use the Cooper Black font */
-    color: #ffffff; /* White text color */
-    margin-bottom: 50px; /* Space between "Skills" heading and logos */
-    text-align: center; /* Center the text */
+/* Aggressive styling for Skills section */
+.skills-section .skill-card {
+  width: calc(33.33% - 20px) !important;
+  max-width: 300px !important;
+  padding: 50px !important;
+  box-sizing: border-box !important;
 }
 
-/* Logo or Skills Container */
-.skills-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Allow logos to wrap if needed */
-    gap: 20px; /* Space between logos */
+.skills-section .skill-card img {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+  margin-bottom: 10px !important;
+  max-width: 50px !important;
+  max-height: 50px !important;
+  display: inline-block !important;
+}
+
+.skills-section .skill-card h3 {
+  font-size: 1.2rem !important;
+  margin-bottom: 5px !important;
+}
+
+.skills-section .skill-card p {
+  font-size: 0.9rem !important;
+}
+
+@media (max-width: 768px) {
+  .skills-section .skill-card {
+    width: calc(50% - 20px) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-section .skill-card {
+    width: calc(100% - 20px) !important;
+  }
+}
+
+/* Experience Square */
+.experience-square {
+  cursor: pointer;
+  border: 1px solid #ddd; /* Light border for distinction */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  margin-bottom: 10px; /* Space between items */
+  background-color: #f9f9f9; /* Light background color */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* On click - Background color change */
+.experience-square.active {
+  background-color: #e0f7fa; /* Light cyan background for active state */
+}
+
+/* Header inside experience square */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-header h3 {
+  margin: 0; /* Remove margin from heading */
+}
+
+.timeline {
+  font-size: 0.9rem; /* Slightly smaller font size for the timeline */
+  color: #666; /* Gray color for timeline text */
+}
+
+/* Experience Details */
+.experience-details {
+  margin-top: 10px; /* Space above the details */
+  padding: 10px; /* Padding inside the details box */
+  border-top: 1px solid #ddd; /* Top border to separate from header */
+  background-color: #ffffff; /* White background for details */
+  border-radius: 5px; /* Rounded corners for details */
+  max-height: none; /* Remove the maximum height constraint */
+  overflow: visible; /* Ensure content is fully visible without scrolling */
+}
+
+/* Ensure details are hidden initially */
+.experience-details {
+  display: none; /* Hide details initially */
+}
+
+/* Show details when active */
+.experience-square.active .experience-details {
+  display: block; /* Show details when experience square is active */
+}
+
+.projects-section {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, darkblue, black);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color:#e0f7fa
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  aspect-ratio: 1 / 1;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-box.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-details-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-details {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.achievements-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light grey background for contrast */
+  color: #333333; /* Dark grey text color */
+  text-align: center;
+}
+
+.achievements-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: 'Cooper Black', sans-serif;
+  color: #333333; /* Dark grey color for the title */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
+}
+
+.achievements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between items */
+}
+
+.achievement-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(100% - 40px); /* Full width minus padding */
+  max-width: 300px; /* Max width for the card */
+  text-align: left; /* Align text to the left */
+}
+
+.achievement-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1e3a8a; /* Dark blue color for the title */
+}
+
+.achievement-card p {
+  font-size: 1rem;
+  color: #666666; /* Grey color for the description */
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .achievement-card {
+    width: calc(50% - 40px); /* Half width minus padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-card {
+    width: calc(100% - 40px); /* Full width minus padding for mobile screens */
+  }
 }

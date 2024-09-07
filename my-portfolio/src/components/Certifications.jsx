@@ -1,15 +1,25 @@
 import React from 'react';
+import './Certifications.css';
 
 function Certifications() {
   return (
-    <section>
-      <div className="box">
-        <h2>C E R T I F I C A T I O N</h2>
-        <p><strong>IBM Badge:</strong> Cyber Security Advanced Certificate</p>
-        <p><strong>AttackIQ Certification:</strong> Foundation of Operationalizing MITRE ATT&CK</p>
-        <p><strong>Diploma from Alison:</strong> Diploma in Fundamentals of Artificial Intelligence</p>
-        <p><strong>VTF University:</strong> Boot Camp Completion Certificate for Security and Splunk</p>
-        <p><strong>Cyber Triage:</strong> Introduction to DFIR</p>
+    <section id="certifications">
+      <h2 className="certifications-title">Certifications</h2>
+      <div className="certifications-content">
+        <img 
+          src="https://www.freepnglogos.com/uploads/certified-png/stamp-certified-png-images-download-21.png" 
+          alt="Certified" 
+          className="certification-image" 
+        />
+        <div className="certification-details">
+          <ul>
+            <li>IBM Badge - Cyber Security Advanced Certificate</li>
+            <li>Certification from AttackIQ - Foundation of Operationalizing MITRE ATT&CK</li>
+            <li>Diploma from Alison - Diploma in Fundamentals of Artificial Intelligence</li>
+            <li>VTF University Bootcamp - Security Analyst Completion Certificate & Splunk Completion Certificate</li>
+            <li>Cyber Triage - Introduction to DFIR</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

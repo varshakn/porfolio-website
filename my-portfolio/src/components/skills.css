@@ -1,73 +1,88 @@
-/* src/components/Skills.css */
 .skills-container {
-    margin: 40px 0; /* Space from top and bottom */
-    text-align: center; /* Center content */
+  padding: 80px 50px;
+  background-color: #f9f9f9;
+  color: #333333;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Cooper Black', sans-serif;
+  color: #333333;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .skills-title {
-    font-family: 'Cooper Black', sans-serif; /* Cooper Black font */
-    color: #000000; /* Black text color */
-    font-size: 2.5rem; /* Larger title size */
-    margin-bottom: 20px; /* Space below the title */
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .skills-carousel {
-    overflow: hidden; /* Hide overflow for smooth scrolling */
-    position: relative;
-  }
-  
-  .skills-wrapper {
-    width: 100%; /* Full width */
-  }
-  
-  .skills-list {
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    animation: scroll 20s linear infinite; /* Continuous scrolling animation */
-  }
-  
+}
+
+.skills-box {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 120px;
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px; /* Increased border radius for skills boxes */
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #1a2a6c, #000000);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Added to ensure content doesn't overflow rounded corners */
+}
+
+.skills-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
   .skills-box {
-    min-width: 150px; /* Maintain size of each logo box */
-    margin: 0 10px; /* Space between boxes */
-    flex-shrink: 0; /* Prevent shrinking */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    width: 100px;
+    height: 100px;
   }
-  
+
   .skills-box img {
-    width: 100px; /* Size of the logo */
-    height: auto; /* Keep aspect ratio */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    width: 50px;
+    height: 50px;
   }
-  
-  .skills-box img:hover {
-    transform: scale(1.2); /* Scale up on hover */
-  }
-  
-  /* Skills Header */
-.skills-header {
-    font-size: 2rem; /* Adjust the font size as needed */
-    font-family: 'Cooper Black', sans-serif; /* Use the Cooper Black font */
-    color: #ffffff; /* White text color */
-    margin-bottom: 50px; /* Space between "Skills" heading and logos */
-    text-align: center; /* Center the text */
 }
 
-/* Logo or Skills Container */
-.skills-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Allow logos to wrap if needed */
-    gap: 20px; /* Space between logos */
-}
-
-  /* Animation for scrolling */
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+@media (max-width: 480px) {
+  .skills-box {
+    width: 80px;
+    height: 80px;
   }
-  
+
+  .skills-box img {
+    width: 40px;
+    height: 40px;
+  }
+}
