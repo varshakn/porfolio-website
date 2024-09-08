@@ -36,6 +36,13 @@
     opacity: 1; /* Ensure it is visible */
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding is included in element width/height */
+    overflow-x: hidden; /* Prevent horizontal scrolling in case of overflow */
+}
+
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
